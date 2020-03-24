@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777777;
+  padding: 30px;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #64ffdbb9, #00897bb9),
+    url(../img/2.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%; 
+  transform: translate(-50%,-50%);
+}
+.heading-primary {
+  color: white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  /* line-height: 95vh; */
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 25px;
+  animation: moveInLeft 1s ease-out;
+
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 10.7px;
+  animation: moveInRight 1s ease-in;
+}
+
+@keyframes moveInLeft{
+  0%{
+opacity: 0;
+transform: translateX(-100px);
+  }
+  80%{
+    opacity: .8;
+    transform: translateX(10px);
+  }
+  100%{
+    opacity:1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight{
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80%{
+    opacity: .8;
+    transform: translate(-10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn:link, .btn:visited{
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-white{
+  background-color: white;
+  color: grey;
+
+
+}
+
+.logo-clip{
+  height: 500px;
+  background-image: linear-gradient(to right bottom, #64ffdbb9, #00897bb9),
+  url(../img/2.jpg);
+  width:100%;
+  background-clip: content-box;
+  clip-path: polygon(
+    45% 100%,      45% 19%,    15% 18%, 
+     13% 79%,      37% 75%,    39% 43%,
+     30% 44%,     28% 57%,      19% 57%,
+     24% 32%,       44% 29%,       42% 86%,
+     10% 90%,       8% 9%,        91% 12%, 
+     94% 90%,         55% 87%,
+     57% 28%,           81% 31%, 
+     84% 60%,           71% 60%,           74% 44%, 
+     63% 41%, 
+     61% 80%,          88% 80%,         86% 24%,
+      49% 19%,       50% 100%,      100% 100%,
+       93% 0,     5% 5%,        5% 100%);
+      }
