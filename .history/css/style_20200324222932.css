@@ -32,7 +32,9 @@ body {
 .logo {
   height: 60px;
 }
-
+.logo:hover{
+  animation:move
+}
 .text-box {
   position: absolute;
   top: 40%;
