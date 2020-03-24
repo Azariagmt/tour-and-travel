@@ -34,7 +34,7 @@ body {
 }
 .text-box {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%; 
   transform: translate(-50%,-50%);
 }
@@ -54,6 +54,6 @@ body {
 .heading-primary-sub {
   display: block;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 10.7px;
 }
