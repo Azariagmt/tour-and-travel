@@ -110,7 +110,7 @@ transform: translateX(-100px);
   text-decoration: none;
   display: inline-block;
   padding: 15px 40px;
-  border-radius: 100px;
+  border-radius: 5px;
   transition: all .2s;
   position: relative;
 }
@@ -153,7 +153,7 @@ transform: translateX(-100px);
 }
 .btn-animated{
   animation: moveInTop .7s ease-out .75s;
-  animation-fill-mode: backwards;
+  animation-fill-mode: ;
 
 }
 .logo-clip{
