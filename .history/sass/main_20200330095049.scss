@@ -3,7 +3,7 @@ $color-primary-light:#64ffdbb9;
 $color-primary-dark:#00897bb9;
 
 * ,
-*::after, *::before{
+::after, ::{
     margin: 0;
     padding: 0;
     box-sizing: inherit;

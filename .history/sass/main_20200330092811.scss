@@ -2,15 +2,14 @@ $color-primary:#777777;
 $color-primary-light:#64ffdbb9;
 $color-primary-dark:#00897bb9;
 
-* ,
-*::after, *::before{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
   }
   
   html{
-    font-size: 62.5%;
+    font-size: 10px;
   }
 
   body {
@@ -20,7 +19,6 @@ $color-primary-dark:#00897bb9;
     line-height: 1.7;
     color: $color-primary;
     padding: 3rem;
-    box-sizing: border-box;
   }
   
   .header {
@@ -97,7 +95,7 @@ $color-primary-dark:#00897bb9;
     }
     80%{
       opacity: .8;
-      transform: translate(-1rem);
+      transform: translate(-10px);
     }
     100%{
       opacity: 1;
@@ -108,7 +106,7 @@ $color-primary-dark:#00897bb9;
   @keyframes moveInTop{
     0%{
       opacity: 0;
-      transform: translateY(8rem);
+      transform: translateY(80px);
     }
     100%{
       opacity: 1;
@@ -119,21 +117,20 @@ $color-primary-dark:#00897bb9;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    padding: 1.5rem 4rem;
-    border-radius: 10rem;
+    padding: 15px 40px;
+    border-radius: 100px;
     transition: all .2s;
     position: relative;
-    font-size: 1.6rem;
   }
   
   .btn:hover{
-    transform: translateY(-.3rem);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
   }
   
   .btn:active{
-    transform: translateY(-.1rem);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
   }
   
   .btn-white{
@@ -146,7 +143,7 @@ $color-primary-dark:#00897bb9;
     display: inline-block;
     height: 100%;
     width:100%;
-    border-radius:10rem;
+    border-radius:100px;
     position: absolute;
     top:0;
     left:0;
@@ -167,7 +164,7 @@ $color-primary-dark:#00897bb9;
     animation-fill-mode: backwards;
   }
   .logo-clip{
-    height: 50rem;
+    height: 500px;
     background-image: linear-gradient(to right bottom, #64ffdbb9, #00897bb9),
     url(../img/2.jpg);
     width:100%;
