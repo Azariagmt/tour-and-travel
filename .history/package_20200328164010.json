@@ -1,0 +1,22 @@
+{
+  "name": "tour-and-travel",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "main": "index.js",
+  "scripts": {
+    """: "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azariagmt/tour-and-travel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Azariagmt/tour-and-travel/issues"
+  },
+  "homepage": "https://github.com/Azariagmt/tour-and-travel#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
