@@ -1,0 +1,93 @@
+@import "abstracts/functions.scss";
+@import "abstracts/mixins";
+@import "abstracts/variables.scss";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/buttons";
+
+@import "layout/header";
+
+@import "pages/home";
+
+
+
+
+
+
+.logo-clip {
+  height: 50rem;
+  background-image: linear-gradient(to right bottom, #64ffdbb9, #00897bb9),
+    url(../img/2.jpg);
+  width: 100%;
+  background-clip: content-box;
+  .header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)
+      ),
+      url(../img/2.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    position: relative;
+  
+    &__logo-box {
+      position: absolute;
+      top: 4rem;
+      left: 4rem;
+    }
+  
+    &__logo {
+      height: 6rem;
+    }
+  
+    &__text-box {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+  
+  clip-path: polygon(
+    45% 100%,
+    45% 19%,
+    15% 18%,
+    13% 79%,
+    37% 75%,
+    39% 43%,
+    30% 44%,
+    28% 57%,
+    19% 57%,
+    24% 32%,
+    44% 29%,
+    42% 86%,
+    10% 90%,
+    8% 9%,
+    91% 12%,
+    94% 90%,
+    55% 87%,
+    57% 28%,
+    81% 31%,
+    84% 60%,
+    71% 60%,
+    74% 44%,
+    63% 41%,
+    61% 80%,
+    88% 80%,
+    86% 24%,
+    49% 19%,
+    50% 100%,
+    100% 100%,
+    93% 0,
+    5% 5%,
+    5% 100%
+  );
+}
